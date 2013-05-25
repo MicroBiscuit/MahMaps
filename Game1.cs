@@ -187,7 +187,7 @@ namespace MahMaps
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Teal);
 
             //Begin the spriteBatch call
             spriteBatch.Begin();
@@ -218,9 +218,9 @@ namespace MahMaps
             string layerText = "";
 
             if (drawableLayer == 0)
-                layerText = "Layer 1";
+                layerText = "Back Layer";
             else if (drawableLayer == 1)
-                layerText = "Layer 2";
+                layerText = "Front Layer";
             else if (drawableLayer == 2)
                 layerText = "Collision Layer";
 

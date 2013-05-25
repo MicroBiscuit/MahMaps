@@ -48,8 +48,8 @@ namespace MahMaps.GUI
             buttons.Add(new LoadMapButton(loadMap, new Vector2(position.X + 275, position.Y + 25)));
             buttons.Add(new LoadTileButton(loadTiles, new Vector2(position.X + 400, position.Y + 25)));
             buttons.Add(new BackLayerButton(backLayer, new Vector2(position.X + 525, position.Y + 25)));
-            buttons.Add(new FrontLayerButton(frontLayer, new Vector2(position.X + 600, position.Y + 25)));
-            buttons.Add(new CollisionLayerButton(collisionLayer, new Vector2(position.X + 675, position.Y + 25)));
+            buttons.Add(new FrontLayerButton(frontLayer, new Vector2(position.X + 640, position.Y + 25)));
+            buttons.Add(new CollisionLayerButton(collisionLayer, new Vector2(position.X + 735, position.Y + 25)));
         }
 
         public void Update()
@@ -69,7 +69,7 @@ namespace MahMaps.GUI
         public void Draw()
         {
             //Draw the panel
-            Game1.spriteBatch.Draw(panel, position, Color.White);
+            Game1.spriteBatch.Draw(panel, position, new Color(196, 225, 255));
 
             //Draw the buttons
             for (int i = 0; i < buttons.Count; i++)

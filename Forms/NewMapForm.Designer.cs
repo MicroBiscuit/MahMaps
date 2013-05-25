@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewMapForm));
             this.MapNameLabel = new System.Windows.Forms.Label();
             this.MapHeightLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -183,6 +184,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.MapHeightLabel);
             this.Controls.Add(this.MapNameLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "NewMapForm";
             this.Text = "New Map";
             ((System.ComponentModel.ISupportInitialize)(this.MapHeightNumeric)).EndInit();
